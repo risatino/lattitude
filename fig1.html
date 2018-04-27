@@ -19,9 +19,6 @@
   </head>
 
   <body>
-    <!-- <div class="container">
-      <h1>The Lattitude Report</h1>
-    </div> -->
 
     <nav class="navbar navbar-default static-top">
       <div class="container-fluid">
@@ -33,14 +30,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <span class="navbar-brand glyphicon glyphicon-globe" href="#"></span>
-            <a class="navbar-brand" href="#">LATTITUDE</a>
+          <span class="navbar-brand glyphicon glyphicon-globe" href="#"></span>
+          <a class="navbar-brand" href="#">LATTITUDE</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">COMPARISON DATA REPORT<span class="sr-only">(current)</span></a></li>
+            <li><a href="index.html">COMPARISON DATA REPORT<span class="sr-only">(current)</span></a></li>
             <li><a href="resources.html">DATA SOURCE</a></li>
             <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -61,10 +58,10 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PLOTS<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Cloudiness</a></li>
-                <li><a href="#">Humidity</a></li>
-                <li><a href="#">Temperature</a></li>
-                <li><a href="#">Winds</a></li>
+                <li><a href="fig3.html">Cloudiness</a></li>
+                <li><a href="fig2.html">Humidity</a></li>
+                <li class="active"><a href="fig1.html">Temperature</a></li>
+                <li><a href="fig4.html">Winds</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="https://risatino.github.io" target="_blank">AUTHOR | Risa Prezzano</a></li>
                 <li><a href="https://github.com/risatino/PyAPI-WeatherPy" target="_blank">WeatherPy GitHub REPO</a></li>
@@ -77,43 +74,24 @@
     </nav>
 
 <div class="container">
-  <div class="row">
-  <h3>Comparisons</h3>
-    <p>WeatherPy is a Weather Analysis Report Using Pandas, Matplotlib and the <a href="https://openweathermap.org/">OpenWeatherMap API</a></p>
-    <p></p>
-  </div>
-</div>
-
-<div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <img src="images/LatVsClouds_percent.png" alt="cloudiness" />
-      </div>
-      <div class="col-md-6">
-        <img src="images/LatVsHumidity_percent.png" alt="humidity"/>
-      </div>
+        <h3>Temperature Detail</h3>
     </div>
     <div class="row">
-      <div class="col-md-6">
-        <img src="images/LatVsTemp_F.png" alt="temperature" />
-      </div>
-      <div class="col-md-6">
-        <img src="images/LatVsWinds_MPH.png" alt="windspeed" />
-      </div>
+        <div class="col-md-8">
+            <img src="images/Fig1-temperature.png" alt="temperature-detail"/>    
+        </div>
+        <br>
+        <div class="col-md-3">
+            <hr>
+            <p>This is a detail view of the Latitude VS Temperature (one year ago) on January 5, 2017.</p>
+        </div>
     </div>
-  </div>
-
-<div class="container">
-
-  <ol>
-    <br>
-    <li>There seems to a visible temperature drop in the latitude range of 40-60 (Northern hemisphere). Also, every 20 degrees in latitude is roughly a 20 degrees drop in temperature(F).</li> 
-    <br>
-    <li>The highest concentration of humidity appears to occur in cities located between the 40-60 latitude range (Northern hemisphere). I don't believe there is any relationship between latitude and cloudiness, but based on the plot graph, there are several cities that collect at 0%, 80% and 100%.</li>
-    <br>
-    <li>Cities located in latitudes of the 40-60 range (Northern hemisphere) seem to report the highest wind speed.</li>
-  </ol>   
-
+    <div class="row">
+        <div class="col-md-12">
+            <p>Pretty Neat!</p>
+        </div>
+    </div>
 </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
